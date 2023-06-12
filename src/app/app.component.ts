@@ -15,7 +15,8 @@ export class AppComponent {
     this.dynamicClass = ['gray', 'gray', 'gray']
     if (this.password.length === 0) {
       this.dynamicClass = ['gray', 'gray', 'gray'];
-    } else if (this.password.length < 8) {
+    }
+    else if (this.password.length < 8) {
       this.dynamicClass = ['red', 'red', 'red'];
     }
     else if (/[a-zA-Z]/.test(this.password) && /[0-9]/.test(this.password) && /[^\w\s]/.test(this.password)) {
@@ -23,7 +24,8 @@ export class AppComponent {
     } 
     else if (/[a-zA-Z]/.test(this.password) && /[0-9]/.test(this.password) || /[a-zA-Z]/.test(this.password) && /[^\w\s]/.test(this.password) || /[0-9]/.test(this.password) && /[^\w\s]/.test(this.password)) {
       this.dynamicClass = ['yellow', 'yellow', 'gray']
-    } else {
+    }
+    else {
       this.dynamicClass = ['red', 'gray', 'gray']};
     }
     }
