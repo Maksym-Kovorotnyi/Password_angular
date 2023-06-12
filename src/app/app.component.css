@@ -1,0 +1,32 @@
+.container {
+    display: inline-block;
+    width: 170px;
+
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+.passwordCheck {
+    width: inherit;
+    height: 20px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.gray {
+    background-color: gray;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}
