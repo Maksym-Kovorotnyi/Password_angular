@@ -1,6 +1,6 @@
-<form class="container" (keyup)="passwordStrengthCheck()">
-  <input type="password" name="password" [(ngModel)]="password" />
-  <div class="passwordCheck" [ngClass]="dynamicClass[0]"></div>
-  <div class="passwordCheck" [ngClass]="dynamicClass[1]"></div>
-  <div class="passwordCheck" [ngClass]="dynamicClass[2]"></div>
-</form>
+<app-password-form
+  (passwordStrengthCheck)="dynamicClass = $event"
+></app-password-form>
+<app-password-strength [dynamicClass]="dynamicClass[0]"></app-password-strength>
+<app-password-strength [dynamicClass]="dynamicClass[1]"></app-password-strength>
+<app-password-strength [dynamicClass]="dynamicClass[2]"></app-password-strength>
